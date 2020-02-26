@@ -1,0 +1,73 @@
+/* Reset */
+
+body, h1, h2, h3, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #252525;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #252525;
+}
+
+* {
+    box-sizing: border-box; /* quando um elemento tiver um tamanho definido o padding, borda, etc não será somado ao tamanho definido do width e estará dentro desse tamanho, caso não tivesse essa propriedade para todos os elementos, seria somado esse valor */
+}
+
+img {
+    display: block; /* definindo imagem como block para ocupar somente o espaço da imagem e não dar um padding que pega por automático no navegador e também por estar alterando o tipo do display da img, por padrão é inline, alterando para bloco é possível centralizar o conteúdo com margin: 0 auto; */
+    max-width: 100%; /* para deixar a imagem responsiva, pois irá ocupar o máximo de espaço que conseguir */
+}
+
+/* Fim Reset */
+
+/* Menu */
+
+.menu-info {
+    font-size: 1.125em; /* 18px */
+    text-align: center;
+    background-color: #D6D3C8;
+    padding: 10px 0;
+}
+
+.menu-logo img {
+    margin: 40px auto;
+}
+
+.menu-nav {
+    border-top: 4px solid #D6D3C8;
+    border-bottom: 4px solid #D6D3C8;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+.menu-nav ul li {
+    display: inline-block;
+}
+
+.menu-nav ul li a {
+    display: block;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+.menu-nav ul li a::before {
+    content: '•';
+    margin-right: 10px;
+}
+
+.menu-nav ul li:first-child a::before {
+    content: '';
+}
+
+/* Fim Menu */
